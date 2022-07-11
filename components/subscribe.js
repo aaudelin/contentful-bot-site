@@ -6,9 +6,6 @@ export default function Subscribe() {
     const {register, handleSubmit, watch, formState: {errors}} = useForm();
 
     const subscribe = async (data) => {
-        console.log(data)
-
-        // 3. Send a request to our API with the user's email address.
         const res = await fetch('/api/subscribe', {
             body: JSON.stringify({
                 email: data.email,
@@ -27,18 +24,18 @@ export default function Subscribe() {
     return (
         <section
             className="text-slate-800 text-center flex-col flex items-center md:justify-between">
-            <h2 className="text-rose-800 text-2xl md:text-4xl">
+            <h2 className="text-rose-800 text-4xl">
                 Keep me informed !
             </h2>
-            <h4 className="mt-5 text-slate-800 text-l">
+            <h4 className="px-4 mt-5 text-slate-800 text-sm lg:text-l">
                 Contentful Bot is still in progress. We are working hard to offer you the best experience.
             </h4>
-            <div className="text-slate-800 text-l">
+            <div className="px-4 text-slate-800 text-sm lg:text-l">
                 When you subscribe you accept to be notified of our public launch !
             </div>
             {!formSubmited ?
                 <form
-                    className="w-1/2 max-w-2xl mt-10 flex flex-col text-left border-2 border-slate-50 border-opacity-20 p-5 rounded"
+                    className="w-full max-w-2xl mt-10 flex flex-col text-left border-2 border-slate-50 border-opacity-20 p-5 rounded"
                     onSubmit={handleSubmit(subscribe)}>
                     <label className="font-medium" htmlFor="email">Your email</label>
                     <input

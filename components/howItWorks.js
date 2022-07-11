@@ -15,8 +15,8 @@ export default function HowItWorks() {
                     any <ContentfulText/> workspace. Login using your <ContentfulText/> credentials
                 </StepCard>
                 <StepCard step={2} title={"Create an API Key"}>
-                    Generate an API key using your <span className="text-rose-700">Contentful Bot</span> admin panel
-                    You can create multiple keys with different scopes and rights
+                    Generate an API key using your <span className="text-rose-700">Contentful Bot</span> admin panel.
+                    You can create multiple keys with different scopes and rights.
                 </StepCard>
                 <StepCard step={3} title={"Automate your content"}>
                     Go to your favourite automation tool like <ContentfulText text={"Zapier"} /> or <ContentfulText text={"Make"} /> and
