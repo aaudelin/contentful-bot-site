@@ -34,7 +34,7 @@ export default function Subscribe() {
                 Contentful Bot is still in progress. We are working hard to offer you the best experience.
             </h4>
             <div className="text-slate-800 text-l">
-                When you subscribe you accept to be notify of our public launch !
+                When you subscribe you accept to be notified of our public launch !
             </div>
             {!formSubmited ?
                 <form

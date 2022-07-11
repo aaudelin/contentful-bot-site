@@ -6,7 +6,7 @@ export default function HowItWorks() {
         <section
             className="text-slate-800 text-center flex-col flex items-center md:justify-between mt-16 mb-16 md:mb-12">
             <h2 className="text-2xl md:text-4xl">
-                Easily integrate you <span className="text-rose-700">Contentful</span> content with you favorite
+                Easily integrate your <span className="text-rose-700">Contentful</span> content with your favorite
                 automation tool
             </h2>
             <div className="flex flex-row flex-wrap justify-around lg:flex-nowrap lg:justify-between mt-5">
