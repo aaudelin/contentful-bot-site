@@ -17,7 +17,7 @@ export default function Post({ action, preview }) {
     <Layout preview={preview}>
       <Container>
         <Header />
-          <h2>{action.name}</h2>
+          <h2>{action?.name}</h2>
           <SectionSeparator />
       </Container>
     </Layout>
@@ -29,7 +29,7 @@ export async function getStaticProps({ preview = false }) {
   return {
     props: {
       preview,
-      action: data?.find(action => action.slug) ?? null,
+      action: data?.find(action => action?.name) ?? null,
     },
   }
 }
@@ -37,7 +37,7 @@ export async function getStaticProps({ preview = false }) {
 export async function getStaticPaths() {
   const allPosts = await getActions()
   return {
-    paths: allPosts?.map(({ slug }) => `/actions/${slug}`) ?? [],
+    paths: allPosts?.map((action) => `/actions/${action?.name}`) ?? [],
     fallback: true,
   }
 }
