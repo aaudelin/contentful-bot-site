@@ -1,24 +1,30 @@
 import {useState} from "react";
 import {useForm} from "react-hook-form";
+import {Audio, Circles, ThreeDots} from "react-loader-spinner";
 
 export default function Subscribe() {
     const [formSubmited, setFormSubmited] = useState(false)
     const {register, handleSubmit, watch, formState: {errors}} = useForm();
+    const [loader, setLoader] = useState(false);
 
     const subscribe = async (data) => {
-        const res = await fetch('/api/subscribe', {
-            body: JSON.stringify({
-                email: data.email,
-                need: data.need,
-            }),
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            method: 'POST'
-        });
-
+        setLoader(true);
+        try {
+            const res = await fetch('/api/subscribe', {
+                body: JSON.stringify({
+                    email: data.email,
+                    need: data.need,
+                }),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                method: 'POST'
+            });
+        } catch (exception) {
+            console.error("Impossible to call mailchimp", exception);
+        }
+        setLoader(false)
         setFormSubmited(true)
-
     };
 
     return (
@@ -57,11 +63,21 @@ export default function Subscribe() {
                         name="need"
                         placeholder="Share with us any information about how and why you want to use Contentful Bot"
                         {...register("need")}/>
+
                     <button
-                        className="transition-all ease-in-out duration-300 border-white border-2 hover:border-slate-400 ml-auto w-56 py-2 mt-4 rounded bg-white "
-                        type="submit">Submit</button>
+                        className="flex justify-center transition-all ease-in-out duration-300 border-white border-2 hover:border-slate-400 ml-auto w-56 h-12 py-2 mt-4 rounded bg-white "
+                        type="submit">
+                            {loader ? <ThreeDots
+                                height="30"
+                                width="56"
+                                color='#BE123C'
+                                ariaLabel='loading'
+                            /> : "Submit"}
+                    </button>
                 </form>
-                : <div className="mt-10 text-xl text-rose-800 border-2 border-slate-50 border-opacity-20 p-5 rounded">Thank you ! You will soon be notified.</div>
+                : <div
+                    className="mt-10 text-xl text-rose-800 border-2 border-slate-50 border-opacity-20 p-5 rounded">Thank
+                    you ! You will soon be notified.</div>
             }
         </section>
     )
