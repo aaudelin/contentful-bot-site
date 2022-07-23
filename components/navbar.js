@@ -52,7 +52,7 @@ export default function Navbar() {
                 <div className="ml-10 text-md">
                     <a href="#subscribe"
                        className="lg:flex-grow mr-10 inline-block text-lg bg-slate-800 text-white px-6 py-4 leading-none border rounded transition-all ease-in-out duration-500 hover:border-black hover:bg-white hover:text-slate-800 mt-4 lg:mt-0">
-                        Keep me informed
+                        Join the waiting list
                     </a>
                 </div>
             </div>

@@ -25,7 +25,7 @@ export default function Subscribe() {
         <section
             className="text-slate-800 text-center flex-col flex items-center md:justify-between">
             <h2 className="text-rose-800 text-4xl">
-                Keep me informed !
+                Join the waiting list !
             </h2>
             <h4 className="px-4 mt-5 text-slate-800 text-sm lg:text-l">
                 Contentful Bot is still in progress. We are working hard to offer you the best experience.
