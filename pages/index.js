@@ -16,7 +16,7 @@ export default function Index({ preview, allActions }) {
     <>
       <Layout preview={preview} class="font-sans">
         <Head>
-          <title>Contentful Bot - Automate with Zapier or Integromat</title>
+          <title>Contentful Bot - Automate with Zapier or Make</title>
         </Head>
         <Navbar />
         <Anchor name="home" />

@@ -35,7 +35,7 @@ export default function Meta() {
             <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
             <meta
                 name="description"
-                content={`Contenful Bot automates workflows between apps using the power of Zapier or Integromat`}
+                content={`Contenful Bot automates workflows between apps using the power of Zapier or Make`}
             />
             <meta property="og:image" content={HOME_OG_IMAGE_URL}/>
         </Head>
