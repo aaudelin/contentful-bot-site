@@ -6,7 +6,7 @@ export default function ExampleActions({allActions}) {
         <section
             className="text-slate-800 text-center flex-col flex items-center md:justify-between mt-16 mb-16 md:mb-12">
             <h2 className="text-2xl md:text-4xl">
-                Some <ContentfulText text="Zapier" /> or <ContentfulText text="Make" /> integration examples with <ContentfulText text="Contentful Bot" />
+                Some <ContentfulText text="Zapier" /> or <ContentfulText text="Integromat" /> integration examples with <ContentfulText text="Contentful Bot" />
             </h2>
             <div className="flex flex-col flex-grow flex-wrap justify-around mt-5">
 

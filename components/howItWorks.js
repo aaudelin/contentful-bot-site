@@ -19,7 +19,7 @@ export default function HowItWorks() {
                     You can create multiple keys with different scopes and rights.
                 </StepCard>
                 <StepCard step={3} title={"Automate your content"}>
-                    Go to your favourite automation tool like <ContentfulText text={"Zapier"} /> or <ContentfulText text={"Make"} /> and
+                    Go to your favourite automation tool like <ContentfulText text={"Zapier"} /> or <ContentfulText text={"Integromat"} /> and
                     register <ContentfulText text="Contentful Bot" /> App. Start automating your content !
                 </StepCard>
 

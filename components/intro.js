@@ -6,7 +6,7 @@ export default function Intro() {
                 <h1 className="text-2xl md:text-4xl">
                     Automate your <span className="text-rose-700">Contentful</span> workspaces in a single place
                 </h1>
-                <h2 className="text-xl mt-5">Combine the flexibility of a Headless CMS with the power of Zapier or Make
+                <h2 className="text-xl mt-5">Combine the flexibility of a Headless CMS with the power of Zapier or Integromat
                     automation</h2>
                 <button
                     className="transition-colors ease-in-out duration-150 rounded-md mt-5 text-lg text-rose-700 border-2 border-red-50 px-4 py-2 bg-red-50 hover:text-rose-900 hover:bg-white hover:border-2 hover:border-red-100">
