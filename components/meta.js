@@ -39,16 +39,6 @@ export default function Meta() {
                 content={`Contenful Bot automates workflows between apps using the power of Zapier or Make`}
             />
             <meta property="og:image" content={HOME_OG_IMAGE_URL}/>
-            <Script strategy="lazyOnload" async ßsrc="https://www.googletagmanager.com/gtag/js?id=G-BSJT1Q7WMN"></Script>
-            <Script strategy="lazyOnload">
-                {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-BSJT1Q7WMN');
-                `}
-            </Script>
         </Head>
     )
 }
