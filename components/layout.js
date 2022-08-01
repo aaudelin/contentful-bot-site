@@ -16,7 +16,6 @@ export default function Layout({preview, children}) {
                     gtag('config', 'G-BSJT1Q7WMN');
                 `}
             </Script>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
             <Script async strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=UA-235375056-1">
             </Script>
             <Script strategy="lazyOnload" type="text/javascript">
