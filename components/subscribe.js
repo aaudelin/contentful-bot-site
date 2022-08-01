@@ -20,6 +20,9 @@ export default function Subscribe() {
                 },
                 method: 'POST'
             });
+            await fetch('/formValidated', {
+                method: 'GET'
+            });
         } catch (exception) {
             console.error("Impossible to call mailchimp", exception);
         }
